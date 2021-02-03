@@ -11,18 +11,23 @@ const promises = [];
 
 const writer = fs.createWriteStream('README.md');
 
-writer.write('# Topo Backgrounds\n')
+writer.write('# Topo Backgrounds\n');
+
 locations.forEach(({ latitude, longitude, zoom, name: locationName, slug: locationSlug }) => {
   writer.write(`# ${locationName}\n`);
+
   maps.forEach(({ id: map, name: mapName, slug: mapSlug }) => {
     let mapLine = `* ${mapName} `;
     const mapLinks = [];
+
     sizes.forEach(({width, height, name: sizeName}) => {
       const params = new URLSearchParams({ width, height, zoom, map, latitude, longitude });
       const url = `https://at-background.herokuapp.com/image?${params}`;
       const name = `${locationSlug}-${mapSlug}-${sizeName}`;
       const path = `images/${name}.png`;
+
       mapLinks.push(`[${sizeName}](${path})`);
+
       promises.push((cb) => {
         if (fs.existsSync(path)) {
           console.log(`Skipping ${name} - file exists.`);
@@ -38,9 +43,10 @@ locations.forEach(({ latitude, longitude, zoom, name: locationName, slug: locati
             resp.body.pipe(dest);
           })
           .then(text => cb(null, text))
-          .catch(err => cb(err))
+          .catch(err => cb(err));
       });
     });
+
     mapLine += mapLinks.join(' - ') + '\n';
     writer.write(mapLine);
   });
