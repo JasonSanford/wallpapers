@@ -5,15 +5,15 @@ Each area of interest below has a wallpaper for each combination of color (dark 
 ## Phone
 
 <div>
-  <img src="screenshots/everest-dark-logo-phone.png" style="width: 200px; margin-right: 10px">
-  <img src="screenshots/gorge-green-logo-phone.png" style="width: 200px; margin-right: 10px">
-  <img src="screenshots/gorge-dark-phone.png" style="width: 200px; margin-right: 10px">
-  <img src="screenshots/whitney-green-logo-phone.png" style="width: 200px; margin-right: 10px">
+  <img src="screenshots/everest-dark-logo-phone.png" width="200">
+  <img src="screenshots/gorge-green-logo-phone.png" width="200">
+  <img src="screenshots/gorge-dark-phone.png" width="200">
+  <img src="screenshots/whitney-green-logo-phone.png" width="200">
 </div>
 
 ## Laptop / Desktop
 
 <div>
-  <img src="screenshots/grand-canyon-dark-logo-laptop.png" style="width: 830px;">
+  <img src="screenshots/grand-canyon-dark-logo-laptop.png" width="800">
 </div>
 
