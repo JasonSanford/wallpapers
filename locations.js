@@ -40,6 +40,13 @@ const locations = [
     latitude: 37.7425095,
     longitude: -119.5769427,
     zoom: 14
+  },
+  {
+    name: 'Silverton',
+    slug: 'silverton',
+    latitude: 37.8011986,
+    longitude: -107.7449936,
+    zoom: 14
   }
 ];
 
