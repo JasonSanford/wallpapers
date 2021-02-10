@@ -33,6 +33,13 @@ const locations = [
     latitude: 36.57728590826155,
     longitude: -118.29311750829221,
     zoom: 15
+  },
+  {
+    name: 'Yosemite Valley',
+    slug: 'yosemite-valley',
+    latitude: 37.7425095,
+    longitude: -119.5769427,
+    zoom: 14
   }
 ];
 
